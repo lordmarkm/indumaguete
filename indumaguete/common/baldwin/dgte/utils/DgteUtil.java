@@ -8,8 +8,6 @@ import java.util.Map.Entry;
 import javax.annotation.Resource;
 import javax.inject.Named;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 import baldwin.dgte.model.Item;
 
 @Named

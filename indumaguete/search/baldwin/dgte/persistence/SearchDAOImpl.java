@@ -19,7 +19,7 @@ public class SearchDAOImpl implements SearchDAO {
 	@Autowired private SessionFactory factory;
 	
 	@SuppressWarnings("unchecked")
-	@Override 
+	@Override
 	public List<Item>[] search(String term) {
 		List<Item> businessNameMatches = factory.getCurrentSession().createCriteria(Item.class)
 				.add(Restrictions.like("businessName", "%" + term + "%")).list();

@@ -18,7 +18,6 @@ import org.springframework.web.servlet.ModelAndView;
 import baldwin.dgte.model.Article;
 import baldwin.dgte.model.Item;
 import baldwin.dgte.service.ManagementService;
-import baldwin.dgte.service.ManagementService;
 import baldwin.dgte.utils.DgteUtil;
 
 @Controller @RequestMapping("/manage") @SessionAttributes({"item", "article"})
@@ -123,7 +122,8 @@ public class ManagementController {
 
 		Map<String, Object> m = new HashMap<String, Object>();
 		try {
-			Article article = adminService.newArticle(ancestry, title, domain, content);
+			//Article article = 
+			adminService.newArticle(ancestry, title, domain, content);
 			m.put("status", "success");
 			m.put("domain", domain);
 			m.put("path", ancestry + "/" + domain);

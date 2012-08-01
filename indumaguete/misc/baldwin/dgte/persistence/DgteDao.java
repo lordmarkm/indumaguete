@@ -2,7 +2,6 @@ package baldwin.dgte.persistence;
 
 import java.util.List;
 
-import baldwin.dgte.model.Article;
 import baldwin.dgte.model.Item;
 import baldwin.dgte.utils.DgteUtil.Filter;
 
