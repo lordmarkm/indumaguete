@@ -1,0 +1,41 @@
+@import url("indumaguete.css");
+
+select {
+	min-width: 400px;
+}
+
+input[type="text"], input[type="email"], input[type="number"], input[type="password"] {
+	min-width: 400px;
+}
+
+.ui-selectmenu-menu li a,
+.ui-selectmenu-group-label {
+	font-size: 1em;
+}
+
+.label {
+	min-width: 250px;
+	display: block;
+	vertical-align: top;
+}
+
+.container_checkbox {
+	margin-left: 250px;
+}
+
+label.error {
+	margin-left: 10px;
+	color: red;
+}
+
+#form_basicinfo .explanation {
+	display:block;
+}
+
+#form_basicinfo textarea {
+	width: 400px;
+}
+
+#a_imagePreview {
+	margin-left: 5px;
+}

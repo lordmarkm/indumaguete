@@ -1,0 +1,10 @@
+@import url("indumaguete.css");
+
+a.button {
+	margin: 5px;
+}
+
+#longdescContainer {
+	width: 100%;
+	padding-left: 5px;
+}

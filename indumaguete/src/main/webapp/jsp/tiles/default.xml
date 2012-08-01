@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="default" template="/jsp/tiles/layout.jsp">
+		<put-attribute name="header" value="/jsp/tiles/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/jsp/tiles/footer.jsp" />
+	</definition>
+	
+	<definition name="error" extends="default">
+		<put-attribute name="body" value="/jsp/error.jsp" />
+	</definition>
+	
+	<definition name="regform" extends="default">
+		<put-attribute name="body" value="/jsp/advertise.jsp" />
+	</definition>
+	
+	<definition name="modify" extends="default">
+		<put-attribute name="body" value="/jsp/modify.jsp" />
+	</definition>
+	
+	<definition name="regcomplete" extends="default">
+		<put-attribute name="body" value="/jsp/regcomplete.jsp" />
+	</definition>
+	
+	<definition name="edit" extends="default">
+		<put-attribute name="body" value="/jsp/managementflows/edit.jsp" />
+	</definition>
+	
+	<definition name="editprimary" extends="default">
+		<put-attribute name="body" value="/jsp/managementflows/editprimary.jsp" />
+	</definition>
+	
+	<definition name="edithomepage" extends="default">
+		<put-attribute name="body" value="/jsp/managementflows/edithomepage.jsp" />
+	</definition>
+	
+	<definition name="editpage" extends="default">
+		<put-attribute name="body" value="/jsp/managementflows/editpage.jsp" />
+	</definition>
+	
+	<definition name="addpage" extends="default">
+		<put-attribute name="body" value="/jsp/managementflows/addpage.jsp" />
+	</definition>
+	
+	<definition name="viewarticle" extends="default">
+		<put-attribute name="body" value="/jsp/viewarticle.jsp" />
+	</definition>
+</tiles-definitions>

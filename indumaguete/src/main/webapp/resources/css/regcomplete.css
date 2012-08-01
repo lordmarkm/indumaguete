@@ -1,0 +1,19 @@
+@import url("indumaguete.css");
+
+li {
+	font-size: 12pt;
+}
+
+p {
+	font-size: 12pt;
+}
+
+div.suggestion {
+	padding-left: 5px;
+}
+
+a.minibutton > span.ui-button-text {
+	padding: 1 1; !important;
+	line-height: 1;
+	vertical-align: middle;
+}

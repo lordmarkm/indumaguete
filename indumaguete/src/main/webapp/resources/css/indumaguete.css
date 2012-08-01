@@ -1,0 +1,81 @@
+.float-left {
+	float: left;	
+}
+
+.float-right {
+	float: right;
+}
+
+
+
+
+img.profile {
+	max-width: 240px;
+	max-height: 240px;
+}
+
+.subtitle {
+	font-size: 12px;
+}
+
+.explanation {
+	font-size: 12px;
+	color: grey;
+}
+
+.footnote {
+	color: grey;
+	font-size: 0.6em;
+}
+
+span.dgte-prop {
+	color: blue;
+}
+
+span.highlight {
+	color: blue;
+}
+
+span.error {
+	color: red;
+}
+
+.summary {
+	width: 100%;
+	padding-left: 5px;
+	padding-top: 5px;
+}
+
+.summary_image {
+	max-width: 150px;
+	max-height: 150px;
+}
+
+.summary_primaryInfo {
+	margin-left: 15px;
+	vertical-align: top;
+	display: inline-block;
+}
+
+.summary_secondaryInfo {
+	font-size: 0.7em;
+}
+
+.summary_description {
+	font-style: italic;
+}
+
+
+
+
+
+.footer {
+	vartical-align: text-bottom;
+	text-align: right;
+}
+
+.footer input {
+	margin: 5px;
+}
+
+

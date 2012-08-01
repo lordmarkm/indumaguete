@@ -1,0 +1,37 @@
+@import url("indumaguete.css");
+
+input[type="text"], input[type="email"], input[type="number"] {
+	min-width: 400px;
+}
+
+.label {
+	min-width: 100px;
+	width: 100px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+a.minibutton {
+	margin-top: 2px;
+}
+
+a.minibutton > span.ui-button-text {
+	padding: 1 1; !important;
+	line-height: 1;
+	vertical-align: middle;
+}
+
+#container_longdescription {
+	width: 100%;
+	padding-left: 5px;
+	padding-top: 5px;
+}
+
+div.title {
+	padding-left: 5px;
+	width: 100%;
+}
+
+.explanation {
+	margin-left: 100px;
+}

@@ -1,0 +1,1 @@
+<a href="/indumaguete/"><img src="/indumaguete/resources/images/logo.png" title="Back to Search Page" /></a>
