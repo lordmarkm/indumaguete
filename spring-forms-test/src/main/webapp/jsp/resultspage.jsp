@@ -34,5 +34,7 @@
 	</c:forEach>
 </ol>
 
+<a href="/spring-forms-test/form">Back to Forms</a>
+
 </body>
 </html>
