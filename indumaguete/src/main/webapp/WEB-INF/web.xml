@@ -15,8 +15,8 @@
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
 			<param-value>
-				/config/servlet-context.xml
-				/config/fileupload.xml
+				classpath:servlet-context.xml
+				classpath:fileupload.xml
 			</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>

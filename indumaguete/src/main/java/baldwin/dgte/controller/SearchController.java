@@ -12,7 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 import baldwin.dgte.service.SearchService;
 import baldwin.dgte.utils.DgteUtil;
 
-@Controller
+@Controller @RequestMapping("/search/")
 public class SearchController {
 	static Logger log = Logger.getLogger(SearchController.class);
 	
@@ -21,7 +21,7 @@ public class SearchController {
 	
 	final String SEARCH_URL = "/search/";
 	
-	@RequestMapping(value = SEARCH_URL, method = RequestMethod.GET)
+	@RequestMapping(method = RequestMethod.GET)
 	public ModelAndView search() {
 		ModelAndView m = new ModelAndView();
 		m.setViewName("search");
@@ -29,7 +29,7 @@ public class SearchController {
 		return m;
 	}
 	
-	@RequestMapping(value = SEARCH_URL, method = RequestMethod.POST)
+	@RequestMapping(method = RequestMethod.POST)
 	public @ResponseBody Object search(@RequestParam String term, @RequestParam String subcategory) {
 		return searchService.search(term, subcategory);
 	}

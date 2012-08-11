@@ -22,7 +22,7 @@ import baldwin.dgte.utils.DgteUtil;
 
 @Controller @RequestMapping("/register/") @SessionAttributes({"item"})
 public class RegistrationController {
-	static Logger log = Logger.getLogger(RegistrationController.class);
+	static Logger log = Logger.getLogger(SimpleRegistrationController.class);
 	
 	@Autowired ManagementService adminService;
 	@Autowired private DgteUtil dgteUtil;

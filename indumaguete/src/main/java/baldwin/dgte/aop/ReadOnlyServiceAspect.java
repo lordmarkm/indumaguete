@@ -8,8 +8,6 @@ import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 
-import baldwin.dgte.model.Dude;
-
 @Aspect @Named
 public class ReadOnlyServiceAspect {
 	static Logger log = Logger.getLogger(ReadOnlyServiceAspect.class);
@@ -20,13 +18,9 @@ public class ReadOnlyServiceAspect {
 		StringBuilder message = new StringBuilder("[" + domain + "]");
 		for(Object o : joinPoint.getArgs()) {
 			message.append(" Method: [" + joinPoint.getSignature().getName() + "]");
-			if(o instanceof Dude) {
-				message.append(" Name: [" + ((Dude)o).getName() + "]");
-			}
-			else if(o instanceof HttpServletRequest) {
+			if(o instanceof HttpServletRequest) {
 				message.append(" Ip: [" + ((HttpServletRequest)o).getRemoteAddr() + "]");
-			}
-			else {
+			} else {
 				message.append("param: [" + o + "]");
 			}
 		}

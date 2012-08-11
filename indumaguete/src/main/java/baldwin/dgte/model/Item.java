@@ -1,5 +1,6 @@
 package baldwin.dgte.model;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -16,7 +17,7 @@ import org.apache.commons.codec.digest.DigestUtils;
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 
 @Entity  @Table(name="indgte_items", schema="njfp") @JsonIgnoreProperties(ignoreUnknown = true)
-public class Item implements Cloneable {
+public class Item implements Cloneable, Serializable {
 	private long itemIndex;
 	private int popularity;
 	private Date modified;

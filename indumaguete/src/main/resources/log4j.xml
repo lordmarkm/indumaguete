@@ -13,10 +13,10 @@
         <!-- logger name="baldwin.dgte">
         	<appender-ref ref="CONSOLE" />
         	<priority value="debug" />
-        </logger -->
+        </logger-->
         
         <root>
-                <priority value="info"/>
+                <priority value="debug"/>
                 <appender-ref ref="CONSOLE"/>
         </root>
 </log4j:configuration>

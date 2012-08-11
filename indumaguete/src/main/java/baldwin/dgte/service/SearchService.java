@@ -3,6 +3,8 @@ package baldwin.dgte.service;
 import java.util.List;
 import java.util.Map;
 
+import baldwin.dgte.model.Item;
+
 public interface SearchService {
 	/**
 	 * 1. Search names 
@@ -24,4 +26,11 @@ public interface SearchService {
 	 *  7. imageUrl
 	 */
 	public List<Map<String, String>> search(String term, String subcategory);
+	
+	/**
+	 * Same thing, returns Items directly
+	 * @param term
+	 * @param category
+	 */
+	public List<Item> simpleSearch(String term, String category);
 }
