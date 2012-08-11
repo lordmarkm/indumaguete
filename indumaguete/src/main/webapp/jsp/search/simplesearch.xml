@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="simplesearchtemplate" template="/jsp/search/searchtemplate.jsp">
+		<put-attribute name="header" value="/jsp/tiles/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/jsp/tiles/footer.jsp" />
+	</definition>
+	
+	<definition name="simplesearch" extends="simplesearchtemplate">
+		<put-attribute name="body" value="/jsp/search/simplesearch.jsp" /> 
+	</definition>
+</tiles-definitions>
