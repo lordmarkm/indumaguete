@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import baldwin.dgte.model.Article;
 
-@Repository @Service @Transactional
+@Repository @Transactional
 public class ArticleDaoHibernateImpl implements ArticleDao{
 	static Logger log = Logger.getLogger(ArticleDaoHibernateImpl.class);
 	
@@ -51,7 +51,6 @@ public class ArticleDaoHibernateImpl implements ArticleDao{
 			}
 		}
 	}
-
 
 	@Override
 	public void update(Article article, String newDomain, String newTitle) {

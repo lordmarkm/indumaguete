@@ -16,20 +16,20 @@ public class FormsController {
 	
 	@RequestMapping(method = RequestMethod.GET)
 	public ModelAndView getForm(TestForm testForm) {
-		log.info("Get request received. TestForm: " + testForm);
+		log.info("Get request received. TestForm: {}", testForm);
 		
-		ModelAndView mav = new MavBuilder("formpage").mav();
-		return mav;
+		return new MavBuilder("formpage")
+			.addObject("testForm", testForm)
+			.mav();
 	}
 	
 	@RequestMapping(method = RequestMethod.POST)
 	public ModelAndView submitForm(TestForm testForm, BindingResult bindingResult) throws Exception {
-		log.info("Post request received. TestForm: " + testForm);
+		log.info("Post request received. TestForm: {}", testForm);
 	
 		if(!bindingResult.hasErrors()) {
-			ModelAndView mav = new MavBuilder("resultspage")
-									.addObject("testform", testForm).mav();
-			return mav;
+			return new MavBuilder("resultspage")
+				.addObject("testform", testForm).mav();
 		} else {
 			throw new Exception("It didn't work.");
 		}

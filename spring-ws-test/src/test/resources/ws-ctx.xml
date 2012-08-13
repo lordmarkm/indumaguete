@@ -30,10 +30,6 @@
         <constructor-arg ref="marshaller"/>
     </bean>
 
-    <!-- bean id="marshaller" class="org.springframework.oxm.jaxb.Jaxb2Marshaller"
-          p:contextPath="org.springbyexample.person.schema.beans" /-->
     <bean id="marshaller" class="org.springframework.oxm.jaxb.Jaxb2Marshaller"
           p:contextPath="test.springws.dto" />
-
-
 </beans>

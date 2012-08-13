@@ -1,6 +1,7 @@
 package baldwin.dgte.utils;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -12,6 +13,9 @@ import baldwin.dgte.model.Item;
 
 @Named
 public class DgteUtil {
+	public static final String CATEGORIES_NO_GROUPS = "CATEGORIES_NO_GROUPS";
+	private static final String CATEGORIES_WITH_GROUPS = "CATEGORIES_WITH_GROUPS";
+	
 	List<String> reserved;
 	@Resource(name="categories") Map<String, List<String>> categories;
 	
@@ -41,6 +45,23 @@ public class DgteUtil {
 		return categories;
 	}
 
+	public List<String> getSimpleCategories(String includeGroups) {
+		List<String> simpleCategories = new ArrayList<String>();
+		if(includeGroups.equals(CATEGORIES_WITH_GROUPS)) {
+			simpleCategories.add("All");
+		}
+		for(Entry<String, List<String>> categoryGroup : categories.entrySet()) {
+			if(includeGroups.equals(CATEGORIES_WITH_GROUPS)) {
+				simpleCategories.add("Any " + categoryGroup.getKey());
+			}
+			simpleCategories.addAll(categoryGroup.getValue());
+		}
+		if(includeGroups.equals(CATEGORIES_NO_GROUPS)) {
+			Collections.sort(simpleCategories);
+		}
+		return simpleCategories;
+	}
+	
 	public String determineCategory(String subcategory) {
 		for(Entry<String, List<String>> entry : categories.entrySet()) {
 			if(entry.getValue().contains(subcategory)) return entry.getKey();

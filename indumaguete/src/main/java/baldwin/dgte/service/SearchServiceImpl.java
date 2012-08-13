@@ -19,6 +19,10 @@ public class SearchServiceImpl implements SearchService {
 	
 	@Autowired private SearchDAO db;
 	
+	public List<Item> simpleSearch(String term, String category) {
+		return db.search(term,  category);
+	}
+	
 	public List<Map<String, String>> search(String term, String subcategory) {
 		log.info("Searching " + term + " of " + subcategory);
 		List<Map<String, String>> results = new ArrayList<Map<String, String>>();

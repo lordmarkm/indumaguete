@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import baldwin.dgte.model.Article;
-import baldwin.dgte.model.Dude;
 import baldwin.dgte.model.Item;
 import baldwin.dgte.service.ReadOnlyService;
 import baldwin.dgte.utils.DgteUtil;
@@ -20,13 +19,9 @@ import baldwin.dgte.utils.DgteUtil.Filter;
 
 /**
  * This controller must be stateless
- * 
- * @author user
  */
 @Controller
 public class ReadOnlyController {
-	Dude user;
-	
 	@Autowired ReadOnlyService readOnlyService;
 	@Autowired DgteUtil dgteUtil;
 	

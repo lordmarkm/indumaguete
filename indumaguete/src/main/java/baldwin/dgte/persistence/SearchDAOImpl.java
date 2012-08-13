@@ -38,7 +38,7 @@ public class SearchDAOImpl implements SearchDAO {
 	public List<Item> search(String term, String subcategory) {
 		List<Item> results;
 		if("All".equals(subcategory)) {
-			log.info("Searching all items for " + term);
+			log.info("Searching all items for [" + term + "]");
 			results = factory.getCurrentSession()
 					.createQuery("from Item as item where item.name like :term order by item.modified desc")
 					.setString("term", "%" + term + "%")

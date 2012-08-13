@@ -2,12 +2,11 @@ package baldwin.dgte.persistence;
 
 import java.util.List;
 
-import javax.inject.Named;
-
 import org.apache.log4j.Logger;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Order;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import baldwin.dgte.model.Article;
@@ -15,7 +14,7 @@ import baldwin.dgte.model.Item;
 import baldwin.dgte.utils.DgteUtil;
 import baldwin.dgte.utils.DgteUtil.Filter;
 
-@Named @Transactional
+@Repository @Transactional
 public class DgteDaoHibernateImpl implements DgteDao {
 	static Logger log = Logger.getLogger(DgteDaoHibernateImpl.class);
 

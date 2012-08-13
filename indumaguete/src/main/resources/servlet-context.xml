@@ -24,7 +24,9 @@
 		<property name="definitions">
 			<list>
 				<value>/jsp/tiles/default.xml</value>
+				<value>/jsp/registration/simpleregistration.xml</value>
 				<value>/jsp/search/search.xml</value>
+				<value>/jsp/search/simplesearch.xml</value>
 				<value>/jsp/viewitem/viewitem.xml</value>
 			</list>
 		</property>

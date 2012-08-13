@@ -2,6 +2,8 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+
 
 <spring:url value="/resources/indumaguete-theme/jquery.ui.all.css" var="jquery_ui_css" />
 <spring:url value="/resources/css/advertise.css" var="advertise_css" />
@@ -22,3 +24,5 @@
 
 <spring:url value="/resources/ui-selectmenu/ui.selectmenu.js" var="selectmenu_js" />
 <spring:url value="/resources/ui-selectmenu/ui.selectmenu.css" var="selectmenu_css" />
+
+<script type="text/javascript" src="${jquery_url }" ></script>
